@@ -1,9 +1,3 @@
-Phase 2
-Our adventurer is currently named "Jack". Studies show that "Jack" is probably not the application user's name. Update the code to prompt the user for their name and pass that name to the Adventurer constructor when creating the new Adventurer object.
-
-Phase 3
-This quest is so much fun that everyone is sure to want to do it more than once. Update the code to ask the user if they'd like to repeat the quest after the it has been completed. If the user says "yes", start the quest over. Otherwise, end the program.
-
 Phase 4
 I don't know if you noticed, but our adventurer is naked. What happened to all that talk about a brightly colored robe and shiny hat?
 
