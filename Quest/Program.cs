@@ -58,6 +58,10 @@ namespace Quest
                 favoriteBeatle
             };
 
+            adventurTime();
+
+            void adventurTime()
+            {
             // Loop through all the challenges and subject the Adventurer to them
             foreach (Challenge challenge in challenges)
             {
@@ -78,6 +82,21 @@ namespace Quest
             {
                 Console.WriteLine("I guess you did...ok? ...sorta. Still, you should get out of my sight.");
             }
+            playAgain();
+        }
+
+        void playAgain()
+        {
+            Console.WriteLine("Would you like to play agian? Y/N");
+            string playAgain = Console.ReadLine();
+
+            if (playAgain == "y") {
+                adventurTime();
+            }
+            else {
+                Console.WriteLine("Then get out of my sight, nerd.");
+            }
         }
     }
+}
 }
