@@ -22,6 +22,12 @@ namespace Quest
             Robe robe = new Robe();
             Robe.ColorOfRobe = colors;
             Robe.Length = length;
+
+            Console.WriteLine("Select a Shininess level of your hat 1-5:");
+            int level = Convert.ToInt16(Console.ReadLine());
+
+            Hat hat = new Hat();
+            Hat.ShininessLevel = level;
             // Create a few challenges for our Adventurer's quest
             // The "Challenge" Constructor takes three arguments
             //   the text of the challenge
@@ -56,7 +62,7 @@ namespace Quest
             int maxAwesomeness = 100;
 
             // Make a new "Adventurer" object using the "Adventurer" class
-            Adventurer theAdventurer = new Adventurer(AdventurerName, robe);
+            Adventurer theAdventurer = new Adventurer(AdventurerName, robe, hat);
             theAdventurer.GetDescription();
             // A list of challenges for the Adventurer to complete
             // Note we can use the List class here because have the line "using System.Collections.Generic;" at the top of the file.
