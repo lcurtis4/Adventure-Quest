@@ -75,6 +75,7 @@ namespace Quest
                 favoriteBeatle
             };
 
+            Prize prize = new Prize("A brand new Car!");
             adventurTime();
 
             void adventurTime()
@@ -99,6 +100,9 @@ namespace Quest
             {
                 Console.WriteLine("I guess you did...ok? ...sorta. Still, you should get out of my sight.");
             }
+            
+            Console.WriteLine("Congrats! You've won:");
+            prize.ShowPrize(theAdventurer);
             playAgain();
         }
 
